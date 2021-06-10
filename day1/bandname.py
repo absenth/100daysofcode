@@ -7,10 +7,18 @@ from verbs import pickVerb
 
 def main():
     """ Main Function """
-    name = generate_bandname()
-    os.system('clear')
-    print(f"Your Band Name will be: {name}")
-    print("")
+    again = False
+    while not again:
+        name = generate_bandname()
+        os.system('clear')
+        print(f"Your Band Name will be: {name}")
+        while "Your answer is invalid":
+            answer = input("Keep Band Name (y/n): ")
+            if answer.lower().strip() == "y":
+                print(f"Congrats {name}!")
+                return True
+            if answer.lower().strip() == "n":
+                main()
 
 
 def generate_bandname():
