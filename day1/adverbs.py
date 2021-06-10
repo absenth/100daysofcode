@@ -28,6 +28,6 @@ adverblist = [
     ]
 
 
-def pickAdverb():
+def pick_adverb():
     """ randomly select an adverb """
     return random.choice(adverblist)

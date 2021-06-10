@@ -49,6 +49,6 @@ verblist = [
     ]
 
 
-def pickVerb():
+def pick_verb():
     """ randomly select a verb """
     return random.choice(verblist)

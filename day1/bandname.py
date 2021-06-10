@@ -1,15 +1,15 @@
 # bandname.py generator
 
 import os
-from adverbs import pickAdverb
-from verbs import pickVerb
+from adverbs import pick_adverb
+from verbs import pick_verb
 
 
 def main():
     """ Main Function """
     again = False
     while not again:
-        name = generate_bandname()
+        name = generate_band_name()
         os.system('clear')
         print(f"Your Band Name will be: {name}")
         answer = input("Keep Band Name (y/n): ")
@@ -18,11 +18,11 @@ def main():
             return True
 
 
-def generate_bandname():
+def generate_band_name():
     """ construct a random band name from an adverb and verb """
-    prefix = str(pickAdverb().upper())
-    suffix = str(pickVerb().upper())
-    band_name = (f"{prefix} {suffix}")
+    prefix = pick_adverb().upper()
+    suffix = pick_verb().upper()
+    band_name = f"{prefix} {suffix}"
     return band_name
 
 
