@@ -1,4 +1,4 @@
-#bandname.py generator
+# bandname.py generator
 
 import os
 from adverbs import pickAdverb
