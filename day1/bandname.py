@@ -12,13 +12,12 @@ def main():
         name = generate_bandname()
         os.system('clear')
         print(f"Your Band Name will be: {name}")
-        while "Your answer is invalid":
-            answer = input("Keep Band Name (y/n): ")
-            if answer.lower().strip() == "y":
-                print(f"Congrats {name}!")
-                return True
-            if answer.lower().strip() == "n":
-                main()
+        answer = input("Keep Band Name (y/n): ")
+        if answer.lower().strip() == "y":
+            print(f"Congrats {name}!")
+            return True
+        if answer.lower().strip() == "n":
+            pass
 
 
 def generate_bandname():
