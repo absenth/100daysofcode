@@ -16,8 +16,6 @@ def main():
         if answer.lower().strip() == "y":
             print(f"Congrats {name}!")
             return True
-        if answer.lower().strip() == "n":
-            pass
 
 
 def generate_bandname():
