@@ -10,7 +10,7 @@ def main():
     again = False
     while not again:
         name = generate_band_name()
-        os.system('clear')
+        os.system('cls')
         print(f"Your Band Name will be: {name}")
         answer = input("Keep Band Name (y/n): ")
         if answer.lower().strip() == "y":
