@@ -1,7 +1,7 @@
 # 100DaysOfCode - Day 1 Band Name Generator
 
 
-def main ():
+def main():
   """ Main Function """
   print("Welcome To Day 1 of 100DaysOfCode")
   print("Let's generate your band name shall we")
