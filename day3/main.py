@@ -60,6 +60,8 @@ def red_blue_or_yellow():
     pick_a_door = input("Red, Blue or Yellow? ")
     if pick_a_door.lower().strip() == "y":
         return True
+    elif pick_a_door.lower().strip() == "b":
+        return False
     else:
         return False
 
