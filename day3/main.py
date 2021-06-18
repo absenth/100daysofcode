@@ -16,7 +16,7 @@ def main():
     if not sink_or_swim():
         print("A rogue river Grue spots you swimming.")
         print("You do your best to swim faster trying to escape.")
-        print("You have been eaten bya a Grue!")
+        print("You have been eaten by a Grue!")
         dead()
         exit()
 
