@@ -2,6 +2,7 @@
 
 import random
 
+
 def main():
     rps = ["r", "p", "s"]
     print("Welcome to 100 Days Of Code Day 4")
@@ -47,7 +48,5 @@ def draw(computer_rps):
     print(f"You both chose {computer_rps}")
 
 
-
 if __name__ == "__main__":
     main()
-
