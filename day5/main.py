@@ -23,20 +23,17 @@ while pw_length > 0:
     element_type = random.choice(elements)
     if element_type == "letter":
         if nr_letters > 0:
-            pw_part = random.choice(letters)
-            generated_pw = generated_pw + pw_part
+            generated_pw += random.choice(letters)
             nr_letters -= 1
             pw_length -= 1
     elif element_type == "symbol":
         if nr_symbols > 0:
-            pw_part = random.choice(symbols)
-            generated_pw = generated_pw + pw_part
+            generated_pw += random.choice(symbols)
             nr_symbols -= 1
             pw_length -= 1
     else:
         if nr_numbers > 0:
-            pw_part = random.choice(numbers)
-            generated_pw = generated_pw + pw_part
+            generated_pw += random.choice(numbers)
             nr_numbers -= 1
             pw_length -= 1
 
