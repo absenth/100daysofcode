@@ -21,3 +21,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+'''
+The Problem:
+    For each depth in the INPUT file, provide a total count for the number of times our new depth is deeper than our previous depth
+'''
