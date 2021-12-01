@@ -42,3 +42,8 @@ def get_sums(depths_array):
 
 if __name__ == "__main__":
     main()
+
+'''
+The Problem:
+using a sliding window of 3 depths from the INPUT file, count the number of times our new depth sum, is deeper than the current depth sum.
+'''
