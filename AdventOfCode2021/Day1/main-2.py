@@ -30,9 +30,7 @@ def get_sums(depths_array):
     count = 0
     for window in range(len(depths_array) - 3 + 1):
         window_depth = depths_array[pos] + depths_array[pos + 1] + depths_array[pos + 2]
-        if current_depth == 0:
-            current_depth = window_depth
-        else:
+        if current_depth != 0:
             if current_depth < window_depth:
                 count += 1
         current_depth = window_depth
