@@ -19,11 +19,6 @@ def array_setup():
     return depths_array
 
 
-def get_range(depths_array):
-    windows = len(depths_array) / 3
-    return int(windows)
-
-
 def get_sums(depths_array):
     pos = 0
     current_depth = 0
